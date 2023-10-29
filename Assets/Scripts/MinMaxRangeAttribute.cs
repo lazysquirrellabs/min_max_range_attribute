@@ -8,8 +8,8 @@ namespace SneakySquirrelLabs.MinMaxRangeAttribute
 	{
 		#region Fields
 
-		public float Min;
-		public float Max;
+		public readonly float Min;
+		public readonly float Max;
 
 		#endregion
 
