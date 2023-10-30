@@ -15,6 +15,7 @@ namespace SneakySquirrelLabs.MinMaxRangeAttribute
 		private static readonly float VerticalSpacing = EditorGUIUtility.standardVerticalSpacing;
 
 		private static GUIStyle LabelStyleField;
+		private uint _decimals;
 
 		#endregion
 
@@ -41,6 +42,7 @@ namespace SneakySquirrelLabs.MinMaxRangeAttribute
 
 			var min = minMaxAttribute.Min;
 			var max = minMaxAttribute.Max;
+			_decimals = minMaxAttribute.Decimals;
 			
 			if (property.propertyType == SerializedPropertyType.Vector2Int)
 			{
@@ -128,8 +130,19 @@ namespace SneakySquirrelLabs.MinMaxRangeAttribute
 			}
 
 			static GUIContent BuildIntLabel(float value) => new($"{value:F0}");
-			
-			static GUIContent BuildFloatLabel(float value) => new($"{value:F1}");
+
+			GUIContent BuildFloatLabel(float value)
+			{
+				var floatLabel = _decimals switch
+				{
+					0 => $"{value:F0}",
+					1 => $"{value:F1}",
+					2 => $"{value:F2}",
+					3 => $"{value:F3}",
+					_ => throw new NotSupportedException("Min max attribute supports up to 3 decimal places.")
+				};
+				return new GUIContent(floatLabel);
+			}
 		}
 
 		#endregion

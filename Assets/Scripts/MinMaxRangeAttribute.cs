@@ -10,6 +10,7 @@ namespace SneakySquirrelLabs.MinMaxRangeAttribute
 
 		public readonly float Min;
 		public readonly float Max;
+		public readonly uint Decimals;
 
 		#endregion
 
@@ -21,10 +22,11 @@ namespace SneakySquirrelLabs.MinMaxRangeAttribute
 			Max = max;
 		}
 		
-		public MinMaxRangeAttribute(float min, float max)
+		public MinMaxRangeAttribute(float min, float max, uint decimals = 1)
 		{
 			Min = min;
 			Max = max;
+			Decimals = decimals;
 		}
 
 		#endregion
