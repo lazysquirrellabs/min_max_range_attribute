@@ -10,11 +10,11 @@ namespace SneakySquirrelLabs.MinMaxRangeAttribute
 		#region Fields
 
 		private const float HorizontalSpacing = 5f;
-		private const float OffsetX = -17f;
-		private const float OffsetY = 3f;
+		private const float SliderHandlerWidth = 12f;
+		
 		private static readonly float VerticalSpacing = EditorGUIUtility.standardVerticalSpacing;
-
 		private static GUIStyle LabelStyleField;
+		
 		private uint _decimals;
 
 		#endregion
@@ -94,13 +94,11 @@ namespace SneakySquirrelLabs.MinMaxRangeAttribute
 				// Value labels
 				var secondLineRect = new Rect(position) { y = position.y, height = firstLineRect.height};
 				var valuesY = secondLineRect.y + sliderPosition.height + EditorGUIUtility.standardVerticalSpacing;
-				LabelStyle.alignment = TextAnchor.MiddleRight;
 				// X label
 				var labelsPosition = new Rect(sliderPosition) { y = valuesY };
-				DrawValueLabel(labelsPosition, x, min, max, OffsetX, buildLabel);
+				DrawValueLabel(labelsPosition, x, min, max, true, buildLabel);
 				// Label
-				LabelStyle.alignment = TextAnchor.MiddleLeft;
-				DrawValueLabel(labelsPosition, y, min, max, OffsetY, buildLabel);
+				DrawValueLabel(labelsPosition, y, min, max, false, buildLabel);
 				
 				static float DrawFieldName(Rect position, SerializedProperty property)
 				{
@@ -117,13 +115,15 @@ namespace SneakySquirrelLabs.MinMaxRangeAttribute
 					return size.x;
 				}
 
-				static void DrawValueLabel(Rect position, float value, float min, float max,
-					float offset, Func<float, GUIContent> buildLabel)
+				static void DrawValueLabel(Rect position, float value, float min, float max, bool applyExtraOffset, 
+					Func<float, GUIContent> buildLabel)
 				{
 					var label = buildLabel(value);
 					var labelSize = LabelStyle.CalcSize(label);
 					var relativePosition = (value - min) / (max - min);
-					var x = position.x + relativePosition * position.width + offset;
+					var offset = SliderHandlerWidth / 2 + (applyExtraOffset ? -labelSize.x : 0);
+					var totalWidth = position.width - SliderHandlerWidth;
+					var x = position.x + relativePosition * totalWidth + offset;
 					var labelPosition = new Rect(position) { x = x, width = labelSize.x };
 					EditorGUI.LabelField(labelPosition, label, LabelStyle);
 				}
