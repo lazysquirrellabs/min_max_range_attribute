@@ -1,0 +1,18 @@
+{
+    "name": "SneakySquirrelLabs.MinMaxRangeAttribute.Editor",
+    "rootNamespace": "SneakySquirrelLabs.MinMaxRangeAttribute.Editor",
+    "references": [
+        "GUID:397edf9bfe7ea4399b706e9ee953b982"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
