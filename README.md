@@ -88,4 +88,4 @@ If you would like to report e bug, please create an [issue](https://github.com/m
 Use the [issues page](https://github.com/matheusamazonas/min_max_range_attribute/issues) if there's a problem with your setup, if something isn't working as expected, or if you would like to ask questions about the tool and its usage.
 
 ## License
-Min/max Range Attribute is distributed under the terms of the MIT license. For more information, check the [LICENSE](https://github.com/matheusamazonas/min_max_range_attribute/main/LICENSE) file in this repository.
+Min/max Range Attribute is distributed under the terms of the MIT license. For more information, check the [LICENSE](https://github.com/matheusamazonas/min_max_range_attribute/blob/main/LICENSE) file in this repository.
