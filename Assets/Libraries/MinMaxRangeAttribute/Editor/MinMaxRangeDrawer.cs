@@ -40,28 +40,28 @@ namespace SneakySquirrelLabs.MinMaxRangeAttribute.Editor
 				return;
 			}
 
-			var min = minMaxAttribute.Min;
-			var max = minMaxAttribute.Max;
+			var minLimit = minMaxAttribute.MinLimit;
+			var maxLimit = minMaxAttribute.MaxLimit;
 			_decimals = minMaxAttribute.Decimals;
 			
 			if (property.propertyType == SerializedPropertyType.Vector2Int)
 			{
 				var value = property.vector2IntValue;
-				var x = (float)value.x;
-				var y = (float)value.y;
-				DrawSlider(position, property, min, max, ref x, ref y, BuildIntLabel);
-				value.x = (int)x;
-				value.y = (int)y;
+				var minValue = (float)value.x;
+				var maxValue = (float)value.y;
+				DrawSlider(position, property, minLimit, maxLimit, ref minValue, ref maxValue, BuildIntLabel);
+				value.x = (int)minValue;
+				value.y = (int)maxValue;
 				property.vector2IntValue = value;
 			} 
 			else if (property.propertyType == SerializedPropertyType.Vector2)
 			{
 				var value = property.vector2Value;
-				var x = value.x;
-				var y = value.y;
-				DrawSlider(position, property, min, max, ref x, ref y, BuildFloatLabel);
-				value.x = x;
-				value.y = y;
+				var minValue = value.x;
+				var maxValue = value.y;
+				DrawSlider(position, property, minLimit, maxLimit, ref minValue, ref maxValue, BuildFloatLabel);
+				value.x = minValue;
+				value.y = maxValue;
 				property.vector2Value = value;
 			}
 
@@ -85,7 +85,6 @@ namespace SneakySquirrelLabs.MinMaxRangeAttribute.Editor
 				var sliderWidth = firstLineRect.width - consumedX - maxLabelWidth - HorizontalSpacing;
 				var sliderPosition = new Rect(firstLineRect) { x = firstLineRect.x + consumedX, width = sliderWidth };
 				EditorGUI.MinMaxSlider(sliderPosition, ref x, ref y, min, max);
-				// consumedX += DrawSlider(position, maxLabelWidth, min, max, ref x, ref y);
 				consumedX += sliderWidth + HorizontalSpacing;
 				
 				// Max label
@@ -115,12 +114,12 @@ namespace SneakySquirrelLabs.MinMaxRangeAttribute.Editor
 					return size.x;
 				}
 
-				static void DrawValueLabel(Rect position, float value, float min, float max, bool applyExtraOffset, 
-					Func<float, GUIContent> buildLabel)
+				static void DrawValueLabel(Rect position, float value, float minLimit, float maxLimit, 
+					bool applyExtraOffset, Func<float, GUIContent> buildLabel)
 				{
 					var label = buildLabel(value);
 					var labelSize = LabelStyle.CalcSize(label);
-					var relativePosition = (value - min) / (max - min);
+					var relativePosition = (value - minLimit) / (maxLimit - minLimit);
 					var offset = SliderHandlerWidth / 2 + (applyExtraOffset ? -labelSize.x : 0);
 					var totalWidth = position.width - SliderHandlerWidth;
 					var x = position.x + relativePosition * totalWidth + offset;
