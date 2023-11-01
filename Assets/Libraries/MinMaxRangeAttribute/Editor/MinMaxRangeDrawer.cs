@@ -2,7 +2,7 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
-namespace SneakySquirrelLabs.MinMaxRangeAttribute
+namespace SneakySquirrelLabs.MinMaxRangeAttribute.Editor
 {
 	[CustomPropertyDrawer(typeof(MinMaxRangeAttribute))]
 	internal class MinMaxRangeDrawer : PropertyDrawer
