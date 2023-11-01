@@ -1,5 +1,6 @@
 # Min/max Range Attribute
-![openupm](https://img.shields.io/npm/v/com.sneakysquirrellabs.minmaxrangeattribute?label=openupm&registry_uri=https://package.openupm.com)
+![openupm](https://img.shields.io/npm/v/com.sneakysquirrellabs.minmaxrangeattribute?label=openupm&registry_uri=https://package.openupm.com) 
+
 A bounded (i.e., with a minimum and maximum) range attribute for Unity's `Vector2` and `Vector2Int` fields that draws fields as min/max range sliders, easing the definition of bounded ranges on the inspector.
 
 ![Five examples of attribute usage on the Unity inspector.](https://matheusamazonas.net/min_max_range_attribute_site/assets/images/header.gif)
