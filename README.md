@@ -72,7 +72,7 @@ https://github.com/matheusamazonas/min_max_range_attribute.git?path=Assets/Libra
 Finally, click on the "Add" button. The importing process should start automatically. Once it's done, the attribute can be used in your project. 
 
 ### Import with OpenUPM
-Min/max Range Attribute is available as a package on [OpenUPM](https://openupm.com/packages/com.sneakysquirrellabs.terracedterraingenerator/). To import it into your project via the command line, run the following command:
+Min/max Range Attribute is available as a package on [OpenUPM](https://openupm.com/packages/com.sneakysquirrellabs.minmaxrangeattribute/). To import it into your project via the command line, run the following command:
 ```
 openupm add com.sneakysquirrellabs.minmaxrangeattribute
 ```
@@ -88,4 +88,4 @@ If you would like to report e bug, please create an [issue](https://github.com/m
 Use the [issues page](https://github.com/matheusamazonas/min_max_range_attribute/issues) if there's a problem with your setup, if something isn't working as expected, or if you would like to ask questions about the tool and its usage.
 
 ## License
-Terraced Terrain Generator is distributed under the terms of the MIT license. For more information, check the [LICENSE](https://github.com/matheusamazonas/min_max_range_attribute/main/LICENSE) file in this repository.
+Min/max Range Attribute is distributed under the terms of the MIT license. For more information, check the [LICENSE](https://github.com/matheusamazonas/min_max_range_attribute/main/LICENSE) file in this repository.
