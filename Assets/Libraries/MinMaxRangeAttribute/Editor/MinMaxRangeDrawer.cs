@@ -49,6 +49,7 @@ namespace SneakySquirrelLabs.MinMaxRangeAttribute.Editor
 				var value = property.vector2IntValue;
 				var minValue = (float)value.x;
 				var maxValue = (float)value.y;
+				(minValue, maxValue) = ClampValues(minValue, maxValue, minLimit, maxLimit);
 				DrawSlider(position, property, minLimit, maxLimit, ref minValue, ref maxValue, BuildIntLabel);
 				value.x = (int)minValue;
 				value.y = (int)maxValue;
@@ -59,12 +60,22 @@ namespace SneakySquirrelLabs.MinMaxRangeAttribute.Editor
 				var value = property.vector2Value;
 				var minValue = value.x;
 				var maxValue = value.y;
+				(minValue, maxValue) = ClampValues(minValue, maxValue, minLimit, maxLimit);
 				DrawSlider(position, property, minLimit, maxLimit, ref minValue, ref maxValue, BuildFloatLabel);
 				value.x = minValue;
 				value.y = maxValue;
 				property.vector2Value = value;
 			}
 
+			static (float, float) ClampValues(float minValue, float maxValue, float minLimit, float maxLimit)
+			{
+				minValue = Math.Max(minLimit, minValue);
+				minValue = Math.Min(maxLimit, minValue);
+				maxValue = Math.Min(maxLimit, maxValue);
+				maxValue = Math.Max(maxValue, minValue);
+				return (minValue, maxValue);
+			}
+			
 			static void DrawSlider(Rect position, SerializedProperty property, float min, float max, ref float x, 
 				ref float y, Func<float, GUIContent> buildLabel)
 			{
