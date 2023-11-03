@@ -30,7 +30,7 @@ For example, the field below has `minLimit` equal to 0, `maxLimit` equal to 10 a
 ```
 
 And its inspector representation is:
-![](https://matheusamazonas.net/min_max_range_attribute_site/assets/images/usage/vector_2.png)
+![](https://matheusamazonas.net/min_max_range_attribute_site/assets/images/usage/vector_3.png)
 
 If `decimals` is 2 (`MinMaxRange(0f, 10f, 2)`):
 ![](https://matheusamazonas.net/min_max_range_attribute_site/assets/images/usage/vector_2.png)
