@@ -3,7 +3,7 @@
 
 A bounded (i.e., with a minimum and maximum) range attribute for Unity's `Vector2` and `Vector2Int` fields that draws fields as min/max range sliders, easing the definition of bounded ranges on the inspector.
 
-![Five examples of attribute usage on the Unity inspector.](https://matheusamazonas.net/min_max_range_attribute_site/assets/images/header.gif)
+![Five examples of attribute usage on the Unity inspector.](https://minmax.matheusamazonas.net/assets/images/header.gif)
 
 ## Features
 - Intuitive, compact inspector representation.
@@ -30,10 +30,10 @@ For example, the field below has `minLimit` equal to 0, `maxLimit` equal to 10 a
 ```
 
 And its inspector representation is:
-![](https://matheusamazonas.net/min_max_range_attribute_site/assets/images/usage/vector_3.png)
+![](https://minmax.matheusamazonas.net/assets/images/usage/vector_3.png)
 
 If `decimals` is 2 (`MinMaxRange(0f, 10f, 2)`):
-![](https://matheusamazonas.net/min_max_range_attribute_site/assets/images/usage/vector_2.png)
+![](https://minmax.matheusamazonas.net/assets/images/usage/vector_2.png)
 
 The default value of `decimals` is 1, so we might as well omit the parameter if we would like to display only 1 decimal place:
 ```csharp
@@ -42,7 +42,7 @@ The default value of `decimals` is 1, so we might as well omit the parameter if 
 ```
 
 Which will be displayed as:
-![](https://matheusamazonas.net/min_max_range_attribute_site/assets/images/usage/vector_1.png)
+![](https://minmax.matheusamazonas.net/assets/images/usage/vector_1.png)
 
 Keep in mind that the `decimals` parameter only controls how the value labels will be displayed on the inspector. It doesn't control the values' precision.
 
@@ -57,7 +57,7 @@ For example, the field below has `minLimit` equal to 0 and `maxLimit` equal to 1
 [SerializeField] private Vector2Int _rewardRange = new(2, 4);
 ```
 And its inspector representation is:
-![](https://matheusamazonas.net/min_max_range_attribute_site/assets/images/usage/vector_int.png)
+![](https://minmax.matheusamazonas.net/assets/images/usage/vector_int.png)
 
 ## Importing
 The first step is to import the library into your Unity project. There are two ways to do so: via the Package Manager using a git URL, and via OpenUPM.
@@ -65,7 +65,7 @@ The first step is to import the library into your Unity project. There are two w
 ### Import using a git URL
 This approach uses Unity's Package Manager to add the attribute to your project using the repo's git URL. To do so, navigate to `Window > Package Manager` in Unity. Then click on the `+` and select "Add package from git URL":
 
-![](https://matheusamazonas.net/min_max_range_attribute_site/assets/images/upm_adding.png)
+![](https://minmax.matheusamazonas.net/assets/images/upm_adding.png)
 
 Next, enter the following in the "URL" input field to install the latest version of the attribute:
 ```
