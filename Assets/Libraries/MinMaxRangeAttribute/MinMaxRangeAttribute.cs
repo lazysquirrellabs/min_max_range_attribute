@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace SneakySquirrelLabs.MinMaxRangeAttribute
+namespace LazySquirrelLabs.MinMaxRangeAttribute
 {
 	/// <summary>
 	/// An attribute that simplifies defining bounded ranges (ranges with minimum and maximum limits) on the inspector.
