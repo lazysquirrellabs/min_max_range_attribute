@@ -1,6 +1,6 @@
 {
-    "name": "SneakySquirrelLabs.MinMaxRangeAttribute",
-    "rootNamespace": "SneakySquirrelLabs.MinMaxRangeAttribute",
+    "name": "LazySquirrelLabs.MinMaxRangeAttribute",
+    "rootNamespace": "LazySquirrelLabs.MinMaxRangeAttribute",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

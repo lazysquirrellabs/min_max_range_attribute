@@ -1,6 +1,6 @@
 {
-    "name": "SneakySquirrelLabs.MinMaxRangeAttribute.Editor",
-    "rootNamespace": "SneakySquirrelLabs.MinMaxRangeAttribute.Editor",
+    "name": "LazySquirrelLabs.MinMaxRangeAttribute.Editor",
+    "rootNamespace": "LazySquirrelLabs.MinMaxRangeAttribute.Editor",
     "references": [
         "GUID:397edf9bfe7ea4399b706e9ee953b982"
     ],

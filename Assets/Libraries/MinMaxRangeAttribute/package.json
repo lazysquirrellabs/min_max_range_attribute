@@ -1,6 +1,6 @@
 {
-  "name": "com.sneakysquirrellabs.minmaxrangeattribute",
-  "version": "1.0.1",
+  "name": "com.lazysquirrellabs.minmaxrangeattribute",
+  "version": "1.0.2",
   "displayName": "Min/max range attribute",
   "description": "A bounded (i.e., with a minimum and maximum) range attribute for Unity's Vector2 and Vector2Int fields.",
   "unity": "2021.3",
