@@ -4,9 +4,9 @@
   "displayName": "Min/max range attribute",
   "description": "A bounded (i.e., with a minimum and maximum) range attribute for Unity's Vector2 and Vector2Int fields.",
   "unity": "2021.3",
-  "documentationUrl": "https://github.com/matheusamazonas/min_max_range_attribute",
-  "changelogUrl": "https://github.com/matheusamazonas/min_max_range_attribute/releases",
-  "licensesUrl": "https://github.com/matheusamazonas/min_max_range_attribute/LICENSE",
+  "documentationUrl": "https://minmax.matheusamazonas.net",
+  "changelogUrl": "https://github.com/lazysquirrellabs/min_max_range_attribute/releases",
+  "licensesUrl": "https://github.com/lazysquirrellabs/min_max_range_attribute/LICENSE",
   "keywords": [
     "editor",
     "attribute",
