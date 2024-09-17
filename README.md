@@ -84,7 +84,7 @@ Once the importing process is complete, the attribute can be used in your projec
 The Min/max Range Attribute requires Unity 2021.3.X or above, its target API compatibility level is .NET Standard 2.1, and it does not depend on any other packages.
 
 ## Contributing
-If you would like to report e bug, please create an [issue](https://github.com/lazysquirrellabs/min_max_range_attribute/issues). If you would like to contribute with bug fixing or small improvements, please open a Pull Request. If you would like to contribute with a new feature,  [contact the developer](https://matheusamazonas.net/contact.html).  
+If you would like to report a bug, please create an [issue](https://github.com/lazysquirrellabs/min_max_range_attribute/issues). If you would like to contribute with bug fixing or small improvements, please open a Pull Request. If you would like to contribute with a new feature,  [contact the developer](https://matheusamazonas.net/contact.html).  
 
 ## Getting help
 Use the [issues page](https://github.com/lazysquirrellabs/min_max_range_attribute/issues) if there's a problem with your setup, if something isn't working as expected, or if you would like to ask questions about the tool and its usage.
