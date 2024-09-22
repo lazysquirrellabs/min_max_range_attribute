@@ -69,7 +69,7 @@ This approach uses Unity's Package Manager to add the attribute to your project 
 
 Next, enter the following in the "URL" input field to install the latest version of the attribute:
 ```
-https://github.com/matheusamazonas/min_max_range_attribute.git?path=Assets/Libraries/MinMaxRangeAttribute#latest
+https://github.com/lazysquirrellabs/min_max_range_attribute.git?path=Assets/Libraries/MinMaxRangeAttribute#latest
 ```
 Finally, click on the "Add" button. The importing process should start automatically. Once it's done, the attribute can be used in your project. 
 
@@ -84,10 +84,10 @@ Once the importing process is complete, the attribute can be used in your projec
 The Min/max Range Attribute requires Unity 2021.3.X or above, its target API compatibility level is .NET Standard 2.1, and it does not depend on any other packages.
 
 ## Contributing
-If you would like to report e bug, please create an [issue](https://github.com/matheusamazonas/min_max_range_attribute/issues). If you would like to contribute with bug fixing or small improvements, please open a Pull Request. If you would like to contribute with a new feature,  [contact the developer](https://matheusamazonas.net/contact.html).  
+If you would like to report a bug, please create an [issue](https://github.com/lazysquirrellabs/min_max_range_attribute/issues). If you would like to contribute with bug fixing or small improvements, please open a Pull Request. If you would like to contribute with a new feature,  [contact the developer](https://matheusamazonas.net/contact.html).  
 
 ## Getting help
-Use the [issues page](https://github.com/matheusamazonas/min_max_range_attribute/issues) if there's a problem with your setup, if something isn't working as expected, or if you would like to ask questions about the tool and its usage.
+Use the [issues page](https://github.com/lazysquirrellabs/min_max_range_attribute/issues) if there's a problem with your setup, if something isn't working as expected, or if you would like to ask questions about the tool and its usage.
 
 ## License
-Min/max Range Attribute is distributed under the terms of the MIT license. For more information, check the [LICENSE](https://github.com/matheusamazonas/min_max_range_attribute/blob/main/LICENSE) file in this repository.
+Min/max Range Attribute is distributed under the terms of the MIT license. For more information, check the [LICENSE](https://github.com/lazysquirrellabs/min_max_range_attribute/blob/main/LICENSE) file in this repository.
