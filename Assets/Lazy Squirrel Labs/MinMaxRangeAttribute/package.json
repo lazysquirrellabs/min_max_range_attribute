@@ -10,7 +10,7 @@
   "keywords": [
     "editor",
     "attribute",
-    "terrain inspector",
+    "inspector",
     "vector",
     "range"
   ],
@@ -18,5 +18,12 @@
     "name": "Lazy Squirrel Labs",
     "email": "contact@lslabs.dev",
     "url": "https://lslabs.dev"
-  }
+  },
+  "samples": [
+    {
+      "displayName": "Sample 1",
+      "description": "This sample contains 1 scene with 1 game object which contains a script that uses the Min/Max range attribute with both Vector2Int and Vector2. Click on that game object and look at its inspector to see the attribute in action.",
+      "path": "Samples~/Sample 1"
+    }
+  ]
 }
