@@ -1,0 +1,16 @@
+{
+    "name": "LazySquirrelLabs.MinMaxRangeAttribute.Sample1",
+    "rootNamespace": "LazySquirrelLabs.MinMaxRangeAttribute.Sample1",
+    "references": [
+        "GUID:397edf9bfe7ea4399b706e9ee953b982"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
