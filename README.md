@@ -80,7 +80,7 @@ This approach uses Unity's Package Manager to add the attribute to your project 
 
 Next, enter the following in the "URL" input field to install the latest version of the attribute:
 ```
-https://github.com/lazysquirrellabs/min_max_range_attribute.git?path=Assets/Libraries/MinMaxRangeAttribute#latest
+https://github.com/lazysquirrellabs/min_max_range_attribute.git?path=Assets/Lazy Squirrel Labs/MinMaxRangeAttribute#latest
 ```
 Finally, click on the "Add" button. The importing process should start automatically. Once it's done, the attribute can be used in your project. 
 
