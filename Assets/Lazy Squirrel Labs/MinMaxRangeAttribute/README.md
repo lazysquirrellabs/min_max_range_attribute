@@ -32,9 +32,11 @@ For example, the field below has `minLimit` equal to 0, `maxLimit` equal to 10 a
 ```
 
 And its inspector representation is:
+
 ![](https://minmax.matheusamazonas.net/assets/images/usage/vector_3.png)
 
 If `decimals` is 2 (`MinMaxRange(0f, 10f, 2)`):
+
 ![](https://minmax.matheusamazonas.net/assets/images/usage/vector_2.png)
 
 The default value of `decimals` is 1, so we might as well omit the parameter if we would like to display only 1 decimal place:
@@ -44,6 +46,7 @@ The default value of `decimals` is 1, so we might as well omit the parameter if 
 ```
 
 Which will be displayed as:
+
 ![](https://minmax.matheusamazonas.net/assets/images/usage/vector_1.png)
 
 Keep in mind that the `decimals` parameter only controls how the value labels will be displayed on the inspector. It doesn't control the values' precision.
@@ -59,6 +62,7 @@ For example, the field below has `minLimit` equal to 0 and `maxLimit` equal to 1
 [SerializeField] private Vector2Int _rewardRange = new(2, 4);
 ```
 And its inspector representation is:
+
 ![](https://minmax.matheusamazonas.net/assets/images/usage/vector_int.png)
 
 ## Importing
