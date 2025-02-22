@@ -1,6 +1,51 @@
 # Changelog
 All notable changes to this package will be documented in this file.
 
+## [12.0.1] - 2025-01-16
+
+### Preview Generator changes
+- Updated generated preview collection UI to display the asset extension
+- Fixed an issue with some prefab and model asset types not generating previews
+- Fixed an error that could occur when changing scenes after deleting a preview source asset
+
+## [12.0.0] - 2025-01-13
+
+### General changes
+- The code comprising the Asset Store Publishing Tools has been refactored.
+- Added dependency on Newtonsoft Json
+
+### Uploader changes
+- Updated window to retain its state if closed unless a domain reload occurs
+- Added option to generate higher resolution asset previews when exporting
+- Fixed a rare issue where authentication would fail
+- Minor UI tweaks
+
+### Validator changes
+- Added validation tests for:
+    - Package naming
+	- Project Template assets
+- Updated the Type Namespace validation test to check for Unity top level namespaces
+
+### Exporter changes
+- Updated how asset previews are generated/included for the  package that is being exported
+
+### Preview Generator
+- Added a Preview Generator window that can be used to pre-generate and inspect package previews before exporting
+
+## [11.4.4] - 2024-11-29
+
+### Validator Changes
+- The validator UI window description section can now be expanded or shrunk to take up less screen space
+- Updated severity of the Model Importer Logs validation test
+
+### Exporter Changes
+- Updated exporter to always exclude hidden files and folders beginning with the dot symbol (e.g.: .hiddenFolder/ or .hiddenfile.txt)
+- Updated exporter to explicitly exclude extended attribute files when exporting packages on macOS systems
+
+### Other
+- Moved the Asset Store Tools toolbar items into the Tools section
+- Fixed several window-related compilation warnings when using Unity 6 versions of the Editor
+
 ## [11.4.3] - 2024-08-01
 
 ### Validator Changes
